@@ -18,11 +18,17 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "extends": [
+    "react-app",
+    "react-app/jest"
+  ],
+  "env": {
+    "cypress/globals": true
   },
+  "plugins": [
+    "cypress"
+  ]
+},
   "browserslist": {
     "production": [
       ">0.2%",
@@ -34,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-plugin-cypress": "^3.5.0"
   }
 }
